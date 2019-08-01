@@ -109,7 +109,7 @@ function fname = p_exportImg(handle)
 
     % Save figure to disk
     fname = [tempname '.png'];
-    print(handle, fname, '-dpng');
+    export_fig(fname, '-nocrop', '-r120', handle);
 
 end
 
